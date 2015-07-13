@@ -1,0 +1,3 @@
+* check for #EXT-X-ENDLIST and don't setTimer for reload when hitting that
+* maybe subtract request latency from timersetting/timeout
+* get real interval in ms

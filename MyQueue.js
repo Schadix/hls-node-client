@@ -3,11 +3,12 @@ var events = require("events");
 
 // emits 'data' with length and value
 function MyQueue() {
-	console.log("MyQueue");
+	console.log("MyQueue - constructor - entry");
 	events.EventEmitter.call(this);
 	this.node = null
 	this.length = 0
 	this.emit('change', {"length":this.length, "value": null});
+	console.log("MyQueue - constructor - exit");	
 }
 
 util.inherits(MyQueue, events.EventEmitter);
